@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Simple Form Example")
+st.title("Form")
 name = st.text_input("Enter your name")
 country = st.selectbox("Select your country", ["USA", "Canada", "UK", "Australia"])
 gender = st.radio("Select your gender", ["Male", "Female", "Other"])
