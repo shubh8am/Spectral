@@ -1,9 +1,11 @@
 import streamlit as st
 
 st.title("Form")
-name = st.text_input("Enter your name")
-country = st.selectbox("Select your country", ["USA", "Canada", "UK", "Australia"])
-gender = st.radio("Select your gender", ["Male", "Female", "Other"])
-birthdate = st.date_input("Enter your birthdate")
+fname = st.text_input("Enter your first name")
+mname = st.text_input("Enter your middle name")
+lname = st.text_input("Enter your last name")
+mobile = st.text_input("Enter your mobile number")
+msg = st.text_input("Any message for us")
+
 if st.button("Submit"):
-  st.success(f"Name: {name}, Country: {country}, Gender: {gender}, Birthdate: {birthdate}")
+  st.success(f"Name: {fname,mname,lname}, mobile: {mobile}, Message: {msg}")
